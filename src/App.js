@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CryptoPrize from "./components/CryptoPrize";
+import Home from "./components/Home";
+import PopulationData from "./components/PopulationData";
+import SideNavigation from "./components/SideNavigation";
+import Wallet from "./components/Wallet";
+import Error from "./components/Error";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="flex h-screen bg-white">
+        {/* Render SideNavigation always */}
+        <SideNavigation />
+
+        {/* Render the rest of the components based on route */}
+        <div className="flex-grow overflow-y-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/graph" element={<PopulationData />} />
+            <Route path="/card" element={<CryptoPrize />} />
+            <Route path="/wallet" element={<Wallet />} />
+            <Route path="/*" element={<Error />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
