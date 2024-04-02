@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Carbon-Cell-Assessment/static/css/main.7601fe98.css",
+    "main.js": "/Carbon-Cell-Assessment/static/js/main.27d43c40.js",
+    "static/js/453.6b09c958.chunk.js": "/Carbon-Cell-Assessment/static/js/453.6b09c958.chunk.js",
+    "index.html": "/Carbon-Cell-Assessment/index.html",
+    "main.7601fe98.css.map": "/Carbon-Cell-Assessment/static/css/main.7601fe98.css.map",
+    "main.27d43c40.js.map": "/Carbon-Cell-Assessment/static/js/main.27d43c40.js.map",
+    "453.6b09c958.chunk.js.map": "/Carbon-Cell-Assessment/static/js/453.6b09c958.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7601fe98.css",
+    "static/js/main.27d43c40.js"
+  ]
+}
